@@ -1,10 +1,10 @@
-package be.intecbrussel.springbootthymeleafcrudwabapp.model;
+package be.intecbrussel.springboot.model;
 
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "employees")
-public class employee {
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +18,7 @@ public class employee {
     private String email;
 
 
-    public employee() {}
+    public Employee() {}
 
     public long getId() {
         return id;

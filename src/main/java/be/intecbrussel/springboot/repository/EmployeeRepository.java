@@ -1,9 +1,10 @@
-package be.intecbrussel.springbootthymeleafcrudwabapp.repository;
+package be.intecbrussel.springboot.repository;
 
+import be.intecbrussel.springboot.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmployeeRepository extends JpaRepository {
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
 }
